@@ -1,0 +1,32 @@
+README
+This is a c/c++/ob-c source file parser. (Only support ob-c at now)
+
+HOW TO USE
+
+cd to the 'DCT_Parser' folder
+python dc_parse.py [path:Collection Data File] [path:Source File or Directrory]
+
+Example:
+	python dc_parse.py ./test/test_config ./test/test.cc
+	python dc_parse.py config.txt ~/MyProject
+
+
+HOW TO TEST
+
+cd test
+run ./test.sh
+It will result like that:
+
+********************************************************************************
+Parsing: test.cc
+
+Target: Device_Type          | Key: iPhone4                        | Count: 2
+Target: iOS_Version          | Key: iOS_6.0                        | Count: 1
+Target: WrongTargetName      | Key: rightKey                       | Count: 0
+Target: RightTargetName      | Key: wrongKey                       | Count: 0
+Target: varTarget            | Key: varKey                         | Count: 1
+--------------------------------------------------------------------------------
+Count all: 5
+Count > 0: 3
+Count = 0: 2
+********************************************************************************

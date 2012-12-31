@@ -1,0 +1,5 @@
+Device_Type  iPhone4  count
+iOS_Version  iOS_6.0  count
+WrongTargetName  rightKey  count
+RightTargetName  wrongKey  count
+varTarget  varKey  count
